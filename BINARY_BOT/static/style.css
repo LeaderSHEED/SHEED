@@ -1,0 +1,316 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* BODY */
+
+body{
+
+background:#020c18;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background-image:
+radial-gradient(circle at 20% 20%,#002d3d 0%,transparent 40%),
+radial-gradient(circle at 80% 80%,#001a33 0%,transparent 40%);
+
+color:white;
+
+}
+
+
+/* MAIN BOX */
+
+.main-box{
+
+width:92%;
+max-width:420px;
+
+background:#021a30;
+
+padding:30px 20px;
+
+border-radius:18px;
+
+border:2px solid #00f7ff;
+
+box-shadow:
+0 0 10px #00f7ff,
+0 0 20px #00f7ff inset;
+
+position:relative;
+
+}
+
+
+/* WATERMARK */
+
+.watermark{
+
+position:absolute;
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+font-size:60px;
+font-weight:bold;
+
+color:rgba(255,255,255,0.05);
+
+pointer-events:none;
+
+}
+
+
+/* TITLE */
+
+.title{
+
+text-align:center;
+margin-bottom:20px;
+
+color:#00f7ff;
+
+text-shadow:
+0 0 10px #00f7ff,
+0 0 20px #00f7ff;
+
+}
+
+
+input{
+
+width:100%;
+padding:10px;
+
+border-radius:8px;
+border:2px solid #00ffff;
+
+background:#021c2a;
+color:white;
+
+outline:none;
+
+margin-bottom:12px;
+
+/* FIX */
+box-sizing:border-box;
+
+}
+
+/* BUTTON */
+
+.signal-btn{
+
+width:100%;
+
+padding:14px;
+
+border:none;
+
+border-radius:12px;
+
+font-weight:bold;
+
+font-size:16px;
+
+color:white;
+
+cursor:pointer;
+
+background:linear-gradient(90deg,#ff00cc,#7a00ff);
+
+box-shadow:
+0 0 10px #ff00cc,
+0 0 20px #7a00ff;
+
+transition:.3s;
+
+}
+
+.signal-btn:hover{
+
+transform:scale(1.05);
+
+}
+
+
+/* RESULT BOX */
+
+.result-box{
+
+margin-top:20px;
+
+padding:20px;
+
+background:#042544;
+
+border-radius:14px;
+
+text-align:center;
+
+border:1px solid rgba(0,255,255,0.3);
+
+}
+
+
+/* PAIR TEXT */
+
+.result-box div{
+
+margin:6px 0;
+
+}
+
+
+/* BUY SELL BOX */
+
+.signal-text{
+
+display:inline-block;
+padding:6px 18px;
+
+font-size:20px;
+font-weight:bold;
+
+border-radius:10px;
+
+margin-top:8px;
+
+text-align:center;
+
+width:auto;
+max-width:max-content;
+
+}
+
+
+/* CENTER ALIGN */
+.result-box{
+text-align:center;
+}
+
+
+/* BUY STYLE */
+
+.buy{
+
+color:#00ff88;
+
+border:2px solid #00ff88;
+
+background:rgba(0,255,120,0.1);
+
+box-shadow:0 0 10px #00ff88;
+
+}
+
+
+/* SELL STYLE */
+
+.sell{
+
+color:#ff2e2e;
+
+border:2px solid #ff2e2e;
+
+background:rgba(255,0,0,0.1);
+
+box-shadow:0 0 10px #ff2e2e;
+
+}
+
+/* SELL BLINK */
+
+@keyframes sellblink{
+
+0%{
+
+box-shadow:
+0 0 5px #ff0033 inset,
+0 0 10px #ff0033 inset;
+
+}
+
+100%{
+
+box-shadow:
+0 0 10px #ff0033 inset,
+0 0 18px #ff0033 inset;
+
+}
+
+}
+
+
+/* ENTRY TIME */
+
+.entry{
+
+color:#00eaff;
+
+font-weight:bold;
+
+}
+
+
+/* PROBABILITY */
+
+.prob{
+
+color:#ffc400;
+
+font-weight:bold;
+
+}
+
+
+/* TIMER */
+
+.timer{
+
+margin-top:8px;
+
+font-size:14px;
+
+color:#aaa;
+
+}
+
+
+/* HISTORY */
+
+#history{
+
+margin-top:20px;
+
+}
+
+
+/* HISTORY ITEM */
+
+.suggest{
+
+padding:8px 10px;
+
+margin-top:6px;
+
+border-radius:8px;
+
+font-size:13px;
+
+background:#031f38;
+
+border:1px solid #00f7ff33;
+
+color:#00ff9d;
+
+box-shadow:0 0 6px #00f7ff55;
+
+}
