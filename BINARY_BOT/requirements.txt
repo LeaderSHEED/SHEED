@@ -1,5 +1,5 @@
-
 flask
 pandas
 gunicorn
 git+https://github.com/rongardF/tvdatafeed.git
+
